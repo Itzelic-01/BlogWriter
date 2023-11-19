@@ -31,7 +31,8 @@ def generate_response(prompt):
     return message
 
 # 웹 애플리케이션의 헤더를 설정합니다.
-st.header("안전기술 블로그 글 생성")
+st.image("/Users/sohyunkim/work/blogWriterGPT/image/bloggpt_safety.png")
+st.header("안전기술 블로그 GPT")
 
 # 웹 애플리케이션에 참고자료 입력 필드를 추가합니다.
 txt = st.text_area(
