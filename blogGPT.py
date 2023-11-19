@@ -13,7 +13,7 @@ def generate_response(prompt):
         messages=[
             {
                 "role": "system",
-                "content": "I'm a safety guidance officer for construction sites and certain facilities.\n\n[Functions]\n1. Please recommend the 5 topic of the blog post when requested\n2. Please write a blog post when requested\n(Also, organize the table of contents professionally according to the topic and write post)\n3. Please change or increase your writing professionally\n\nIn honorifics, interesting, not serious\n\nIf the user provides the data next time, please refer to the schedule and fill it out:" + txt
+                "content": "Write a blog post for the person in charge of safety guidance for construction sites and specific facilities. Please recommend five when requesting a topic for a blog post. If you ask me to write a blog about a specific topic, please write it in Korean as long and detailed and professionally as possible. Write in an interesting way with honorific language. If the user asks to extend the length of the text, please write a long text with good quality, including existing information. If you provide data in the following sentence, please refer to it and write an article including the table of contents:" + txt
             },
             {
                 "role": "user",
@@ -31,7 +31,7 @@ def generate_response(prompt):
     return message
 
 # 웹 애플리케이션의 헤더를 설정합니다.
-st.image("/Users/sohyunkim/work/blogWriterGPT/image/bloggpt_safety.png")
+st.image("image/bloggpt_safety.png")
 st.header("안전기술 블로그 GPT")
 
 # 웹 애플리케이션에 참고자료 입력 필드를 추가합니다.
